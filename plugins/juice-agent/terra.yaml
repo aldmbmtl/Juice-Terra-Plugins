@@ -1,0 +1,15 @@
+resource_id: juice-agent
+name: Juice Agent
+icon: https://raw.githubusercontent.com/Juice-Labs/Juice-Labs/master/assets/Juice%4032px.png
+description: Juice GPU-over-IP
+category: Infrastructure
+tags: []
+fields:
+  - name: credentials.token
+    description: Juice m2m token generated at https://app.juicelabs.co
+    required: true
+  - name: credentials.pool
+    description: Name or ID of the pool this agent should join
+    required: true
+  - name: replicaCount
+    description: Number of Agents to run
