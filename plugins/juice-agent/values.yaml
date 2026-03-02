@@ -47,6 +47,7 @@ envFrom: {}
 ## @param nodeSelector Node labels for pod assignment
 nodeSelector:
   kubernetes.io/arch: amd64
+  nvidia.com/gpu.present: "true"
 ## @param tolerations Tolerations for pod assignment
 tolerations: []
 ## @param nodeSelectorPreset If no nodeSelector is specified, fallback to looking for GPU nodes
