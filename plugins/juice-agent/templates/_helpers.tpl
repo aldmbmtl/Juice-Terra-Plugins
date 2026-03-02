@@ -74,7 +74,7 @@ Create the name of the service account to use
 {{- define "juice-agent.secretName" -}}
 {{- if .Values.credentials.existingSecretName }}
 {{- .Values.credentials.existingSecretName | trim }}
-{{- else if and .Values.credentials.token .Values.credentials.pool }}
+{{- else if and .Values.token .Values.pool }}
 {{- (include "juice-agent.fullname" .) | trim }}
 {{- else }}
 {{- "" | required "credentials.existingSecretName or credentials.token and credentials.pool are required." }}
