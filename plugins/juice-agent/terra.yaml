@@ -5,10 +5,10 @@ description: Juice GPU-over-IP
 category: Infrastructure
 tags: []
 fields:
-  - name: credentials.token
+  - name: token
     description: Juice m2m token generated at https://app.juicelabs.co
     required: true
-  - name: credentials.pool
+  - name: pool
     description: Name or ID of the pool this agent should join
     required: true
   - name: replicaCount

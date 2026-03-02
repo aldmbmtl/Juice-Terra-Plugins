@@ -1,14 +1,14 @@
 
 ## @section Credentials
 ## Agent credentials
-## @param credentials.token Juice m2m token to authenticate with
-## @param credentials.pool The name or id of the pool to join
+## @param token Juice m2m token to authenticate with
+## @param pool The name or id of the pool to join
 ## @param credentials.existingSecretName Name of the existing kubernetes secret to read credentials from
 ## @param credentials.poolKey The key in the secret to read the pool from
 ## @param credentials.tokenKey The key in the secret to read the token from
+token: ""
+pool: ""
 credentials:
-  token: ""
-  pool: ""
   existingSecretName: ""
   poolKey: JUICE_POOL
   tokenKey: JUICE_TOKEN
