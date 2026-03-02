@@ -16,3 +16,7 @@ fields:
     required: true
   - name: replicaCount
     description: Number of Agents to run
+  - name: runtimeClassName
+    description: Runtime class to use for GPU support, e.g. nvidia
+    required: true
+    default: nvidia

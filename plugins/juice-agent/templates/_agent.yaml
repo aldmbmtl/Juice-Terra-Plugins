@@ -1,4 +1,5 @@
 {{ define "juice-agent.spec" }}
+runtimeClassName: {{ .Values.runtimeClassName }}
 topologySpreadConstraints:
 - labelSelector:
   matchLabels:

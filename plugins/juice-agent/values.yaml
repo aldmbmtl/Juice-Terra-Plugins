@@ -71,5 +71,4 @@ resources:
     cpu: 500m
     memory: 128Mi
 
-
-
+runtimeClassName: nvidia
